@@ -1,0 +1,50 @@
+services:
+  student-api:
+    image: python:3.12-slim
+    container_name: triage-student-api
+    working_dir: /app
+    volumes:
+      - ./mock_student_api:/app:ro
+    command: >
+      sh -c "pip install --no-cache-dir -q -r requirements.txt &&
+             uvicorn main:app --host 0.0.0.0 --port 8080"
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  model:
+    image: python:3.12-slim
+    container_name: triage-model
+    working_dir: /app
+    volumes:
+      - ./mock_llm:/app:ro
+    command: >
+      sh -c "pip install --no-cache-dir -q -r requirements.txt &&
+             uvicorn main:app --host 0.0.0.0 --port 9000"
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
+
+  triage:
+    image: python:3.12-slim
+    container_name: triage-pipeline
+    working_dir: /app
+    depends_on: [student-api, model]
+    # Long form, with required: false: without it, `docker compose up` with no
+    # `.env` would fail inside Compose before anything starts. With it, the
+    # container still starts and `triage.config` fails cleanly (exit code 2,
+    # with a message that names .env.example): the error lands where the code
+    # can explain it, not in a generic Compose message.
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./triage:/app/triage:ro
+      - ./config:/app/config:ro
+      - ./data:/app/data:ro
+      - ./requirements.txt:/app/requirements.txt:ro
+      - ./output:/app/output
+    command: >
+      sh -c "pip install --no-cache-dir -q -r requirements.txt &&
+             python -m triage"
+    restart: "no"

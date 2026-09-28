@@ -1,0 +1,345 @@
+[
+  {
+    "id": "REQ-2026-0001",
+    "received_at": "2026-09-01T08:14:22Z",
+    "channel": "email",
+    "student_id": "STU-04412",
+    "subject": "Invoice for September",
+    "message": "Good morning, I need the invoice for my September payment so I can submit it to my employer. Thanks."
+  },
+  {
+    "id": "REQ-2026-0002",
+    "received_at": "2026-09-01T09:03:10Z",
+    "channel": "web_form",
+    "student_id": "STU-03871",
+    "subject": "Invoice in my company's name",
+    "message": "Could you issue the invoice in my company's name instead of mine? I'll email you the tax ID."
+  },
+  {
+    "id": "REQ-2026-0003",
+    "received_at": "2026-09-01T11:47:55Z",
+    "channel": "email",
+    "student_id": "STU-05120",
+    "subject": "Enrolment certificate",
+    "message": "Hi, my employer is asking for a certificate showing that I'm enrolled. Could you send me one?"
+  },
+  {
+    "id": "REQ-2026-0004",
+    "received_at": "2026-09-02T07:22:41Z",
+    "channel": "email",
+    "student_id": "STU-02233",
+    "subject": "Course completion certificate",
+    "message": "I finished the programme last month and I need the completion certificate. How do I request it?"
+  },
+  {
+    "id": "REQ-2026-0005",
+    "received_at": "2026-09-02T10:15:08Z",
+    "channel": "whatsapp",
+    "student_id": "STU-04980",
+    "subject": "duplicate invoice",
+    "message": "I think I've been charged twice this month. I need both invoices so I can check."
+  },
+  {
+    "id": "REQ-2026-0006",
+    "received_at": "2026-09-02T16:40:33Z",
+    "channel": "web_form",
+    "student_id": "STU-01755",
+    "subject": "Certificate of teaching hours",
+    "message": "For my employer's training subsidy I need a certificate showing the teaching hours of the master's. Could you send it?"
+  },
+  {
+    "id": "REQ-2026-0007",
+    "received_at": "2026-09-02T18:02:19Z",
+    "channel": "email",
+    "student_id": "STU-03340",
+    "subject": "I can't log in to the platform",
+    "message": "I haven't been able to get in since yesterday. It says the username or password is wrong, and I've already reset it twice."
+  },
+  {
+    "id": "REQ-2026-0008",
+    "received_at": "2026-09-03T08:31:00Z",
+    "channel": "whatsapp",
+    "student_id": "STU-04412",
+    "subject": "The video for class 12 won't load",
+    "message": "The video for session 12 keeps loading forever. The others work fine. I've tried Chrome and Firefox."
+  },
+  {
+    "id": "REQ-2026-0009",
+    "received_at": "2026-09-03T09:55:27Z",
+    "channel": "web_form",
+    "student_id": "STU-05677",
+    "subject": "Error uploading my assignment",
+    "message": "When I try to upload the assignment ZIP I get a 413 error. The file is 48 MB."
+  },
+  {
+    "id": "REQ-2026-0010",
+    "received_at": "2026-09-03T12:10:44Z",
+    "channel": "email",
+    "student_id": "STU-02891",
+    "subject": "I'm not getting platform emails",
+    "message": "I haven't received any notifications for two weeks. I've checked spam and there's nothing there."
+  },
+  {
+    "id": "REQ-2026-0011",
+    "received_at": "2026-09-03T14:28:36Z",
+    "channel": "email",
+    "student_id": "STU-04120",
+    "subject": "Tool licence expired",
+    "message": "The licence you gave us for the tool says it has expired, and I have a submission due on Friday."
+  },
+  {
+    "id": "REQ-2026-0012",
+    "received_at": "2026-09-04T07:44:12Z",
+    "channel": "whatsapp",
+    "student_id": "STU-03871",
+    "subject": "My progress isn't showing",
+    "message": "I've completed all of module 3 but the platform still shows it at 0%."
+  },
+  {
+    "id": "REQ-2026-0013",
+    "received_at": "2026-09-04T11:19:50Z",
+    "channel": "web_form",
+    "student_id": "STU-06001",
+    "subject": "Two-factor authentication not working",
+    "message": "The second-factor code never reaches my phone. I've checked that the number is correct."
+  },
+  {
+    "id": "REQ-2026-0014",
+    "received_at": "2026-09-04T15:36:02Z",
+    "channel": "email",
+    "student_id": "STU-01402",
+    "subject": "Problema con el aula virtual en directo",
+    "message": "Ayer no pude entrar a la clase en directo, el enlace daba sala no encontrada. ¿Hay grabación?"
+  },
+  {
+    "id": "REQ-2026-0015",
+    "received_at": "2026-09-05T08:05:31Z",
+    "channel": "email",
+    "student_id": "STU-04412",
+    "subject": "Question about exercise 4 in module 2",
+    "message": "In exercise 4 I don't understand whether we should normalise before or after splitting the dataset. Could you clarify?"
+  },
+  {
+    "id": "REQ-2026-0016",
+    "received_at": "2026-09-05T09:47:18Z",
+    "channel": "web_form",
+    "student_id": "STU-05120",
+    "subject": "Difference between two concepts in the syllabus",
+    "message": "I'm not clear on the difference between the two approaches explained in session 8. Is there any extra reading?"
+  },
+  {
+    "id": "REQ-2026-0017",
+    "received_at": "2026-09-05T13:22:09Z",
+    "channel": "whatsapp",
+    "student_id": "STU-02233",
+    "subject": "Can my final project be about my company?",
+    "message": "I'd like to base my final project on a real process at my company. Is that allowed, or does it have to be a closed case study?"
+  },
+  {
+    "id": "REQ-2026-0018",
+    "received_at": "2026-09-05T17:58:44Z",
+    "channel": "email",
+    "student_id": "STU-03340",
+    "subject": "Reading list for module 5",
+    "message": "Where can I find the recommended reading for module 5? In the virtual classroom I can only see the slides."
+  },
+  {
+    "id": "REQ-2026-0019",
+    "received_at": "2026-09-06T08:12:55Z",
+    "channel": "email",
+    "student_id": "STU-04980",
+    "subject": "Marking of assignment 2",
+    "message": "I got a 6 on assignment 2 and I don't understand the marking criteria. Can I ask the lecturer to review it?"
+  },
+  {
+    "id": "REQ-2026-0020",
+    "received_at": "2026-09-06T10:33:21Z",
+    "channel": "web_form",
+    "student_id": "STU-05677",
+    "subject": "Optional exercise in module 6",
+    "message": "Does the optional exercise in module 6 count towards the final grade, or is it just for practice?"
+  },
+  {
+    "id": "REQ-2026-0021",
+    "received_at": "2026-09-06T12:47:03Z",
+    "channel": "email",
+    "student_id": "STU-01755",
+    "subject": "Materials from yesterday's session",
+    "message": "In yesterday's session the lecturer showed a notebook that hasn't been uploaded. Could you post it?"
+  },
+  {
+    "id": "REQ-2026-0022",
+    "received_at": "2026-09-07T09:20:17Z",
+    "channel": "whatsapp",
+    "student_id": "STU-06001",
+    "subject": "Question about a case study",
+    "message": "In the hospital case study, is the data already clean or do we need to process it?"
+  },
+  {
+    "id": "REQ-2026-0023",
+    "received_at": "2026-09-07T11:05:38Z",
+    "channel": "email",
+    "student_id": "STU-02891",
+    "subject": "Is there a review session before the exam?",
+    "message": "I'd like to know whether there will be a review session before the block 2 assessment."
+  },
+  {
+    "id": "REQ-2026-0024",
+    "received_at": "2026-09-07T14:41:26Z",
+    "channel": "email",
+    "student_id": "STU-04120",
+    "subject": "I want to withdraw from the programme",
+    "message": "After thinking it over, I want to cancel my enrolment. What do I need to do, and what happens to what I've already paid?"
+  },
+  {
+    "id": "REQ-2026-0025",
+    "received_at": "2026-09-08T08:09:14Z",
+    "channel": "web_form",
+    "student_id": "STU-03871",
+    "subject": "Withdrawal for work reasons",
+    "message": "My shift at work has changed and I can't keep up. I need to withdraw this month."
+  },
+  {
+    "id": "REQ-2026-0026",
+    "received_at": "2026-09-08T10:52:47Z",
+    "channel": "whatsapp",
+    "student_id": "STU-05120",
+    "subject": "Cancel enrolment",
+    "message": "Hi, I want to cancel. It isn't giving me what I expected and I'd rather stop here."
+  },
+  {
+    "id": "REQ-2026-0027",
+    "received_at": "2026-09-08T13:15:59Z",
+    "channel": "email",
+    "student_id": "STU-04980",
+    "subject": "Withdrawal and refund",
+    "message": "I'm requesting withdrawal from the master's and a refund of the remaining monthly fees, under the terms I signed."
+  },
+  {
+    "id": "REQ-2026-0028",
+    "received_at": "2026-09-08T16:30:22Z",
+    "channel": "email",
+    "student_id": "STU-01402",
+    "subject": "No puedo continuar",
+    "message": "Por una situación familiar no voy a poder seguir. ¿Existe la opción de congelar la matrícula en vez de cancelar?"
+  },
+  {
+    "id": "REQ-2026-0001",
+    "received_at": "2026-09-01T08:14:22Z",
+    "channel": "email",
+    "student_id": "STU-04412",
+    "subject": "Invoice for September",
+    "message": "Good morning, I need the invoice for my September payment so I can submit it to my employer. Thanks."
+  },
+  {
+    "id": "REQ-2026-0007",
+    "received_at": "2026-09-02T18:02:19Z",
+    "channel": "email",
+    "student_id": "STU-03340",
+    "subject": "I can't log in to the platform",
+    "message": "I haven't been able to get in since yesterday. It says the username or password is wrong, and I've already reset it twice."
+  },
+  {
+    "id": "REQ-2026-0024",
+    "received_at": "2026-09-07T14:41:26Z",
+    "channel": "email",
+    "student_id": "STU-04120",
+    "subject": "I want to withdraw from the programme",
+    "message": "After thinking it over, I want to cancel my enrolment. What do I need to do, and what happens to what I've already paid?"
+  },
+  {
+    "id": "REQ-2026-0029",
+    "received_at": "2026-09-09T07:48:11Z",
+    "channel": "email",
+    "student_id": "STU-07001",
+    "subject": "Question about the final project deadline",
+    "message": "Hello, I am taking the programme in English. Could you confirm the deadline for the final project? I was told September 30th but the platform shows October 15th. Thanks."
+  },
+  {
+    "id": "REQ-2026-0030",
+    "received_at": "2026-09-09T09:26:38Z",
+    "channel": "web_form",
+    "student_id": "STU-07002",
+    "subject": "Consulta sobre el calendari del mòdul 4",
+    "message": "Bon dia, voldria saber si les sessions del mòdul 4 es faran al matí o a la tarda. Treballo fins a les sis i necessito organitzar-me. Gràcies."
+  },
+  {
+    "id": "REQ-2026-0031",
+    "received_at": "2026-09-09T11:14:52Z",
+    "channel": "email",
+    "student_id": "STU-02233",
+    "subject": "Pending matter",
+    "message": "Hi, it's about what we discussed the other day. You said you'd get back to me this week and I still haven't heard anything. Where are we with it?"
+  },
+  {
+    "id": "REQ-2026-0032",
+    "received_at": "2026-09-09T15:37:05Z",
+    "channel": "whatsapp",
+    "student_id": "STU-05677",
+    "subject": "Quick thing",
+    "message": "Hey, so what's happening with my thing? I don't even know who I'm supposed to talk to any more."
+  },
+  {
+    "id": "REQ-2026-0033",
+    "received_at": "2026-09-10T08:00:00Z",
+    "channel": "email",
+    "subject": "Question about payment",
+    "message": "I'm not sure whether this month's fee has been charged."
+  },
+  {
+    "id": "REQ-2026-0034",
+    "received_at": "10/09/2026 09:15",
+    "channel": "telegram",
+    "student_id": "",
+    "subject": "",
+    "message": "I need urgent help"
+  },
+  {
+    "id": "REQ-2026-0035",
+    "received_at": "2026-09-10T10:41:33Z",
+    "channel": "email",
+    "student_id": "STU-07003",
+    "subject": "Cambio de datos bancarios",
+    "message": "Quiero cambiar la cuenta desde la que me cobráis la mensualidad. ¿Dónde lo hago?"
+  },
+  {
+    "id": "REQ-2026-0036",
+    "received_at": "2026-09-10T12:08:19Z",
+    "channel": "web_form",
+    "student_id": "STU-04412",
+    "subject": "Postpone a submission",
+    "message": "I'm on a work trip next week. Can I submit assignment 3 three days late?"
+  },
+  {
+    "id": "REQ-2026-0037",
+    "received_at": "2026-09-10T14:55:47Z",
+    "channel": "email",
+    "student_id": "STU-03340",
+    "subject": "Access to materials after finishing",
+    "message": "When I finish the programme, will I still have access to the videos and materials, or does it close?"
+  },
+  {
+    "id": "REQ-2026-0038",
+    "received_at": "2026-09-11T08:33:02Z",
+    "channel": "whatsapp",
+    "student_id": "STU-06001",
+    "subject": "The platform is very slow",
+    "message": "Since yesterday afternoon everything has been really slow. Every page takes more than a minute to load."
+  },
+  {
+    "id": "REQ-2026-0039",
+    "received_at": "2026-09-11T10:17:26Z",
+    "channel": "email",
+    "student_id": "STU-01755",
+    "subject": "Can I change group?",
+    "message": "I enrolled in the afternoon group but the morning one suits me better. Is it possible to switch?"
+  },
+  {
+    "id": "REQ-2026-0040",
+    "received_at": "2026-09-11T13:02:58Z",
+    "channel": "email",
+    "student_id": "STU-09999",
+    "subject": "Question about credit transfer",
+    "message": "I did a similar course last year. Could I get credit for any module of the master's?"
+  }
+]

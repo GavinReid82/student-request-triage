@@ -1,0 +1,145 @@
+# Business configuration. Change it here, not in the code.
+categories: [content, technical, admin, withdrawal]
+
+# A single threshold drives two decisions:
+#  - confidence below it -> retry with the precise model
+#  - still below it      -> escalate to human review
+confidence_threshold: 0.75
+
+models:
+  fast: sim-fast
+  precise: sim-precise
+
+http:
+  # Per attempt, not in total: with retries: 3 the wall-clock time of one call
+  # can be three times this number plus the waits between attempts.
+  timeout_s: 10
+  retries: 3
+  backoff_base_s: 0.5
+  # Cap on each wait between attempts, in seconds. Retry-After is chosen by the
+  # server, so it cannot be obeyed without a limit: a "Retry-After: 3600" on
+  # every attempt would stall the process for two hours on a single request.
+  # It also caps the backoff, which grows exponentially.
+  max_wait_s: 30
+
+draft:
+  engine: template   # template | model
+
+db:
+  # How long a connection waits for SQLite's write lock to be released, in
+  # milliseconds, before giving up with "database is locked".
+  lock_wait_ms: 5000
+
+templates:
+  content:
+    es: |
+      Hola {name},
+
+      Hemos recibido tu consulta «{subject}» sobre el contenido del programa
+      {programme}. Tu tutor asignado, {tutor}, te responderá con el detalle
+      que necesitas.
+
+      Un saludo,
+      Equipo académico
+    en: |
+      Hi {name},
+
+      We have received your query "{subject}" about the course content of
+      {programme}. Your assigned tutor, {tutor}, will get back to you with
+      the detail you need.
+
+      Best regards,
+      The Academic Team
+    ca: |
+      Hola {name},
+
+      Hem rebut la teva consulta «{subject}» sobre el contingut del programa
+      {programme}. El teu tutor assignat, {tutor}, et respondrà amb el detall
+      que necessites.
+
+      Una salutació,
+      Equip acadèmic
+  technical:
+    es: |
+      Hola {name},
+
+      Hemos registrado la incidencia técnica «{subject}». Tu matrícula en
+      {programme} figura como {enrolment_status} y tu progreso actual es del
+      {progress_pct}%. El equipo de soporte ya está revisándolo.
+
+      Un saludo,
+      Soporte técnico
+    en: |
+      Hi {name},
+
+      We have logged your technical issue "{subject}". Your enrolment on
+      {programme} is recorded as {enrolment_status} and your current progress
+      is {progress_pct}%. Our support team is already looking into it.
+
+      Best regards,
+      Technical Support
+    ca: |
+      Hola {name},
+
+      Hem registrat la incidència tècnica «{subject}». La teva matrícula a
+      {programme} consta com a {enrolment_status} i el teu progrés actual és
+      del {progress_pct}%. L'equip de suport ja ho està revisant.
+
+      Una salutació,
+      Suport tècnic
+  admin:
+    es: |
+      Hola {name},
+
+      Hemos recibido tu solicitud administrativa «{subject}». Tu matrícula en
+      {programme} figura como {enrolment_status}. Secretaría la tramitará y te
+      confirmará por este mismo medio.
+
+      Un saludo,
+      Secretaría
+    en: |
+      Hi {name},
+
+      We have received your administrative request "{subject}". Your enrolment
+      on {programme} is recorded as {enrolment_status}. Our admin office will
+      process it and confirm through this same channel.
+
+      Best regards,
+      Admin Office
+    ca: |
+      Hola {name},
+
+      Hem rebut la teva sol·licitud administrativa «{subject}». La teva
+      matrícula a {programme} consta com a {enrolment_status}. Secretaria la
+      tramitarà i t'ho confirmarà per aquest mateix mitjà.
+
+      Una salutació,
+      Secretaria
+  withdrawal:
+    es: |
+      Hola {name},
+
+      Hemos recibido tu solicitud de baja «{subject}» del programa {programme}.
+      Antes de tramitarla, tu tutor {tutor} se pondrá en contacto contigo para
+      revisar las opciones disponibles.
+
+      Un saludo,
+      Equipo académico
+    en: |
+      Hi {name},
+
+      We have received your withdrawal request "{subject}" from {programme}.
+      Before processing it, your tutor {tutor} will contact you to go through
+      the options available to you.
+
+      Best regards,
+      The Academic Team
+    ca: |
+      Hola {name},
+
+      Hem rebut la teva sol·licitud de baixa «{subject}» del programa
+      {programme}. Abans de tramitar-la, el teu tutor {tutor} es posarà en
+      contacte amb tu per revisar les opcions disponibles.
+
+      Una salutació,
+      Equip acadèmic
